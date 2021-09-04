@@ -38,19 +38,32 @@ function Sidebar() {
 
         {/* Social Media Details */}
         <div className="flex items-center justify-center gap-3.5">
-          <a href="https://www.facebook.com/jestor.nogueiro/" target="_blank">
+          <a
+            href="https://www.facebook.com/jestor.nogueiro/"
+            target="_blank "
+            rel="facebook"
+          >
             <FaFacebook className="w-8 h-8 text-blue-700 " />
           </a>
-          <a href="https://www.instagram.com/jestor_nogueiro/" target="_blank">
+          <a
+            href="https://www.instagram.com/jestor_nogueiro/"
+            target="_blank"
+            rel="insta"
+          >
             <FaInstagram className="w-8 h-8 text-pink-600" />
           </a>
           <a
             href="https://www.linkedin.com/in/jestor-nogueiro-02467b184/"
             target="_blank"
+            rel="linkedin"
           >
             <FaLinkedin className="w-8 h-8 text-blue-600" />
           </a>
-          <a href="https://github.com/JestorNogueiro" target="_blank">
+          <a
+            href="https://github.com/JestorNogueiro"
+            target="_blank"
+            rel="github"
+          >
             <FaGithub className="w-8 h-8" />
           </a>
         </div>
