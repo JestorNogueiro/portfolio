@@ -1,3 +1,8 @@
+import { FaCss3, FaHtml5, FaReact, FaSass } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiTailwindcss } from "react-icons/si";
+import { DiCss3 } from "react-icons/di";
+
 function resume() {
   return (
     <div>
@@ -56,7 +61,27 @@ function resume() {
       <div className="grid gap-6 md:grid-cols-2 my-6 mx-4">
         <div>
           <h1 className="text-2xl font-bold my-3">Languages & Framwork</h1>
-          <div>{/* Images */}</div>
+          <div>
+            {/* Images */}
+            {/* react */}
+            <p className="p-3">
+              <FaReact className="h-16 w-16 hover:text-blue-600 cursor-pointer " />
+            </p>
+
+            <p>
+              <IoLogoJavascript className="h-16 w-16 hover:text-yellow-400 cursor-pointer " />
+            </p>
+            <p>
+              <FaSass className="h-16 w-16 hover:text-pink-600 cursor-pointer " />
+            </p>
+            <p>
+              <FaCss3 className="h-16 w-16 hover:text-yellow-400 cursor-pointer " />
+            </p>
+            <p>
+              <SiTailwindcss className="h-16 w-16 hover:text-blue-600 cursor-pointer " />
+            </p>
+            <FaHtml5 className="h-16 w-16 hover:text-blue-600 cursor-pointer " />
+          </div>
         </div>
         <div>
           <h2 className="text-2xl font-bold my-3">Tools</h2>
