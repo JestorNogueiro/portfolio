@@ -53,13 +53,13 @@ function resume() {
           </p>
         </div>
       </div>
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-6 md:grid-cols-2 my-6 mx-4">
         <div>
-          <h1>Languages & Framwork</h1>
+          <h1 className="text-2xl font-bold my-3">Languages & Framwork</h1>
           <div>{/* Images */}</div>
         </div>
         <div>
-          <h2>Tools</h2>
+          <h2 className="text-2xl font-bold my-3">Tools</h2>
         </div>
       </div>
     </div>
