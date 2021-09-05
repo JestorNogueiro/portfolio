@@ -44,28 +44,28 @@ function Sidebar() {
           <a
             href="https://www.facebook.com/jestor.nogueiro/"
             target="_blank "
-            rel="facebook"
+            rel="noreferrer"
           >
             <FaFacebook className="w-8 h-8 text-blue-700 " />
           </a>
           <a
             href="https://www.instagram.com/jestor_nogueiro/"
             target="_blank"
-            rel="insta"
+            rel="noreferrer"
           >
             <FaInstagram className="w-8 h-8 text-pink-600" />
           </a>
           <a
             href="https://www.linkedin.com/in/jestor-nogueiro-02467b184/"
             target="_blank"
-            rel="linkedin"
+            rel="noreferrer"
           >
             <FaLinkedin className="w-8 h-8 text-blue-600" />
           </a>
           <a
             href="https://github.com/JestorNogueiro"
             target="_blank"
-            rel="github"
+            rel="noreferrer"
           >
             <FaGithub className="w-8 h-8" />
           </a>
