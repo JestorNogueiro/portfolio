@@ -1,6 +1,6 @@
 module.exports = {
   purge: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class",
   theme: {
     fontFamily: {
       Lobster: ["Lobster"],
@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         green: "#00f260",
         pink: "#f0e6",
+        darkcolor: "#121212",
       },
     },
   },
