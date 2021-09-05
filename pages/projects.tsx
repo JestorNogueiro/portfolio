@@ -7,8 +7,8 @@ function projects() {
       <nav>Navbar</nav>
       <div>
         {project.map((project) => (
-          <div>
-            <ProjectCard projectData={project} key={project.name} />
+          <div key={project.name}>
+            <ProjectCard projectData={project} />
           </div>
         ))}
       </div>
