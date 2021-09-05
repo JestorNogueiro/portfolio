@@ -1,7 +1,14 @@
 import { FaCss3, FaHtml5, FaReact, FaSass } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiTailwindcss } from "react-icons/si";
+import {
+  SiJquery,
+  SiNextDotJs,
+  SiStyledComponents,
+  SiTailwindcss,
+} from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
+import { SiTypescript } from "react-icons/si";
+import LanguageDetails from "../components/LanguageDetails";
 
 function resume() {
   return (
@@ -61,30 +68,16 @@ function resume() {
       <div className="grid gap-6 md:grid-cols-2 my-6 mx-4">
         <div>
           <h1 className="text-2xl font-bold my-3">Languages & Framwork</h1>
-          <div>
+          <div className="flex flex-wrap space-x-3">
             {/* Images */}
             {/* react */}
-            <p className="p-3">
-              <FaReact className="h-16 w-16 hover:text-blue-600 cursor-pointer " />
-            </p>
-
-            <p>
-              <IoLogoJavascript className="h-16 w-16 hover:text-yellow-400 cursor-pointer " />
-            </p>
-            <p>
-              <FaSass className="h-16 w-16 hover:text-pink-600 cursor-pointer " />
-            </p>
-            <p>
-              <FaCss3 className="h-16 w-16 hover:text-yellow-400 cursor-pointer " />
-            </p>
-            <p>
-              <SiTailwindcss className="h-16 w-16 hover:text-blue-600 cursor-pointer " />
-            </p>
-            <FaHtml5 className="h-16 w-16 hover:text-blue-600 cursor-pointer " />
+            <LanguageDetails title="HTML" Icon={FaHtml5} />
+            <LanguageDetails title="CSS" Icon={FaCss3} />
+            <LanguageDetails title="javaScript" Icon={IoLogoJavascript} />
+            <LanguageDetails title="react" Icon={FaReact} />
+            <LanguageDetails title="nextjs" Icon={SiNextDotJs} />
+            <LanguageDetails title="reactNative" Icon={FaReact} />
           </div>
-        </div>
-        <div>
-          <h2 className="text-2xl font-bold my-3">Tools</h2>
         </div>
       </div>
     </div>
