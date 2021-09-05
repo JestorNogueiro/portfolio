@@ -1,5 +1,6 @@
+import next from "next";
 import { RiComputerLine } from "react-icons/ri";
-import { IService } from "./type";
+import { IService, Project } from "./type";
 
 export const servicesProvided: IService[] = [
   {
@@ -13,5 +14,23 @@ export const servicesProvided: IService[] = [
     about:
       "I can build Native app ( both Android and IOS ) using <b>React Native</b>",
     Icon: RiComputerLine,
+  },
+];
+
+export const languagesKnown = [
+  {
+    title: "react",
+  },
+];
+
+export const project: Project[] = [
+  {
+    name: "Disney+ clone",
+    description: "this is clone made with next js",
+    image_path: "/scene.jpg",
+    deployed_url: "/xdfvd",
+    github_url: "fdbfdb",
+    category: ["next"],
+    tech: ["react", "next", "hero Icons"],
   },
 ];
