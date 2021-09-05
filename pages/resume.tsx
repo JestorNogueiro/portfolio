@@ -79,6 +79,20 @@ function resume() {
             <LanguageDetails title="reactNative" Icon={FaReact} />
           </div>
         </div>
+        <div>
+          <h2 className="text-2xl font-bold my-3">Tools</h2>
+          <div className=" flex flex-wrap">
+            <LanguageDetails title="sass" Icon={FaSass} color="pink" />
+            <LanguageDetails title="tailwind css" Icon={SiTailwindcss} />
+            <LanguageDetails
+              title="styled Components"
+              Icon={SiStyledComponents}
+            />
+            <LanguageDetails title="jquery" Icon={SiJquery} />
+
+            <LanguageDetails title="TS" Icon={SiTypescript} />
+          </div>
+        </div>
       </div>
     </div>
   );
