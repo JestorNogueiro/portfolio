@@ -1,20 +1,23 @@
 import { GoLocation } from "react-icons/go";
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
-
+import Image from "next/image";
 function Sidebar() {
   return (
-    <div>
-      <img
-        className="rounded-full w-25 h-25 mx-auto mt-4 "
+    <div className="my-4">
+      <Image
+        className="rounded-full mx-auto  "
         src="/jestor.jpg"
         alt="jestor nogueiro"
+        height="200"
+        width="200"
+        objectFit="contain"
       />
 
       <h2 className="my-3 text-3xl font-medium tracking-wider font-Lobster">
         Jestor Nogueiro
       </h2>
-      <p className="bg-gray-200 my-3 px-2 py-1.5 rounded-full">
+      <p className="bg-gray-200 font-semibold my-3 px-2 py-1.5 rounded-full">
         Front-End Developer
       </p>
 
@@ -33,7 +36,7 @@ function Sidebar() {
           <GoLocation />
           <span>Goa, India</span>
         </div>
-        <p className="my-2 ">jestornogueiro789@gmail.com</p>
+        <p className="my-2 font-semibold ">jestornogueiro789@gmail.com</p>
         <p className="my-2">+91 9823145824 / +91 6366705572</p>
 
         {/* Social Media Details */}
