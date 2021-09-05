@@ -29,7 +29,7 @@ export default function Home() {
           </h1>
           <div className="grid md:grid-cols-2 grid-cols-1 2xl:grid-cols-3 gap-2 ">
             {servicesProvided.map((serv) => (
-              <ServiceCard service={serv} />
+              <ServiceCard service={serv} key={serv.title} />
             ))}
           </div>
         </div>
