@@ -30,9 +30,10 @@ function resume() {
           <h2 className="text-2xl font-bold my-3 ml-4">Experince</h2>
           <p className="font-bold text-xl my-2 ">
             <a
-              href="https://www.tmits.in/"
+              href="https://www.tmits.in/" 
+              
               target="_blank"
-              rel="technomind"
+              rel="noreferrer"
               className="border-b-2 "
             >
               <i className="text-blue-900 font-semibold">
@@ -53,7 +54,7 @@ function resume() {
             <a
               href="https://www.tmits.in/"
               target="_blank"
-              rel="technomind"
+              rel="noreferrer"
               className="border-b-2 "
             >
               <i className="text-blue-900 font-semibold">
@@ -66,7 +67,7 @@ function resume() {
         </div>
       </div>
       <div className="grid gap-6 md:grid-cols-2 my-6 mx-4">
-        <div>
+        <div className="border-r pr-4">
           <h1 className="text-2xl font-bold my-3">Languages & Framwork</h1>
           <div className="flex flex-wrap space-x-3">
             {/* Images */}
@@ -74,23 +75,24 @@ function resume() {
             <LanguageDetails title="HTML" Icon={FaHtml5} />
             <LanguageDetails title="CSS" Icon={FaCss3} />
             <LanguageDetails title="javaScript" Icon={IoLogoJavascript} />
-            <LanguageDetails title="react" Icon={FaReact} />
+            <LanguageDetails title="reactjs" Icon={FaReact} />
             <LanguageDetails title="nextjs" Icon={SiNextDotJs} />
             <LanguageDetails title="reactNative" Icon={FaReact} />
           </div>
         </div>
         <div>
-          <h2 className="text-2xl font-bold my-3">Tools</h2>
+          <h2 className="text-2xl font-bold my-3">Other Tools & Tech</h2>
           <div className=" flex flex-wrap">
-            <LanguageDetails title="sass" Icon={FaSass} color="pink" />
-            <LanguageDetails title="tailwind css" Icon={SiTailwindcss} />
-            <LanguageDetails
-              title="styled Components"
-              Icon={SiStyledComponents}
-            />
             <LanguageDetails title="jquery" Icon={SiJquery} />
 
             <LanguageDetails title="TS" Icon={SiTypescript} />
+            <LanguageDetails title="sass" Icon={FaSass} color="pink" />
+
+            <LanguageDetails title="tailwind css" Icon={SiTailwindcss} />
+            <LanguageDetails
+              title="styledComponents"
+              Icon={SiStyledComponents}
+            />
           </div>
         </div>
       </div>
