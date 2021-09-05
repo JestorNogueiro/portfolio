@@ -33,4 +33,22 @@ export const project: Project[] = [
     category: ["next"],
     tech: ["react", "next", "hero Icons"],
   },
+  {
+    name: "Covid Tracker",
+    description: "this is clone made with next js",
+    image_path: "/scene.jpg",
+    deployed_url: "/xdfvd",
+    github_url: "fdbfdb",
+    category: ["react"],
+    tech: ["react", "material UI", "firebase"],
+  },
+  {
+    name: "Airbnb ",
+    description: "this is clone made with next js",
+    image_path: "/scene.jpg",
+    deployed_url: "/xdfvd",
+    github_url: "fdbfdb",
+    category: ["next"],
+    tech: ["react", "next", "hero Icons"],
+  },
 ];
