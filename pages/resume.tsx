@@ -30,8 +30,7 @@ function resume() {
           <h2 className="text-2xl font-bold my-3 ml-4">Experince</h2>
           <p className="font-bold text-xl my-2 ">
             <a
-              href="https://www.tmits.in/" 
-              
+              href="https://www.tmits.in/"
               target="_blank"
               rel="noreferrer"
               className="border-b-2 "
@@ -86,7 +85,7 @@ function resume() {
             <LanguageDetails title="jquery" Icon={SiJquery} />
 
             <LanguageDetails title="TS" Icon={SiTypescript} />
-            <LanguageDetails title="sass" Icon={FaSass} color="pink" />
+            <LanguageDetails title="sass" Icon={FaSass} />
 
             <LanguageDetails title="tailwind css" Icon={SiTailwindcss} />
             <LanguageDetails
