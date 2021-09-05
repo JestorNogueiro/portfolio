@@ -17,9 +17,9 @@ export default function Home() {
       <div className="flex flex-col px-7 pt-2">
         <h2 className="font-medium md:text-left text-justify">
           I am MCA (Master Of Computer Application) graduate, from Jain College
-          Of Engenering in the in 2020, I'm been working in web development
-          since my BCA last semister. Then I introduced to React.js in the end
-          of MCA last semister, since then i'm working with react.js, and I am
+          Of Engenering in the in 2020, Im been working in web development since
+          my BCA last semister. Then I introduced to React.js in the end of MCA
+          last semister, since then I am been working with react.js, and I am
           loving and enjoying it very much, and looking forword to learn new
           things and technologies to increase my skill set .
         </h2>
