@@ -2,7 +2,13 @@ import { GoLocation } from "react-icons/go";
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 function Sidebar() {
+  const { theme, setTheme } = useTheme();
+
+  const changeTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
   return (
     <div className="my-4">
       <Image
@@ -17,14 +23,14 @@ function Sidebar() {
       <h2 className="my-3 text-3xl font-medium tracking-wider font-Lobster">
         Jestor Nogueiro
       </h2>
-      <p className="bg-gray-200 font-semibold my-3 px-2 py-1.5 rounded-full">
+      <p className="bg-gray-200 dark:bg-gray-100 dark:text-black font-semibold my-3 px-2 py-1.5 rounded-full">
         Front-End Developer
       </p>
 
       <a
         href="/jestor.jpg"
         download="jestorResume"
-        className="bg-gray-200 my-3 px-2  py-1.5 rounded-full flex items-center justify-center  "
+        className="bg-gray-200 dark:bg-gray-100 dark:text-black my-3 px-2  py-1.5 rounded-full flex items-center justify-center  "
       >
         Download Resume
         <HiDownload className="animate-bounce ml-2 " />
@@ -79,7 +85,10 @@ function Sidebar() {
       >
         Email Me{" "}
       </button>
-      <button className=" w-8/12 bg-gradient-to-r from-green to-blue-400 rounded-full my-1.5 py-2 text-xl text-white mb-4 focus:outline-none">
+      <button
+        className=" w-8/12 bg-gradient-to-r from-green to-blue-400 rounded-full my-1.5 py-2 text-xl text-white mb-4 focus:outline-none"
+        onClick={changeTheme}
+      >
         Toggle Theme{" "}
       </button>
     </div>
