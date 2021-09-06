@@ -52,41 +52,41 @@ function Sidebar() {
             target="_blank "
             rel="noreferrer"
           >
-            <FaFacebook className="w-8 h-8 text-blue-700 " />
+            <FaFacebook className="w-8 h-8 text-blue-700 transform hover:scale-110 duration-500 drop-shadow-xl" />
           </a>
           <a
             href="https://www.instagram.com/jestor_nogueiro/"
             target="_blank"
             rel="noreferrer"
           >
-            <FaInstagram className="w-8 h-8 text-pink-600" />
+            <FaInstagram className="w-8 h-8 text-pink transform hover:scale-110 duration-500 drop-shadow-xl" />
           </a>
           <a
             href="https://www.linkedin.com/in/jestor-nogueiro-02467b184/"
             target="_blank"
             rel="noreferrer"
           >
-            <FaLinkedin className="w-8 h-8 text-blue-600" />
+            <FaLinkedin className="w-8 h-8 text-blue-600 transform hover:scale-110 duration-500 drop-shadow-xl" />
           </a>
           <a
             href="https://github.com/JestorNogueiro"
             target="_blank"
             rel="noreferrer"
           >
-            <FaGithub className="w-8 h-8" />
+            <FaGithub className="w-8 h-8 transform hover:scale-110 duration-500 drop-shadow-xl" />
           </a>
         </div>
       </div>
 
       {/* contact */}
       <button
-        className="mt-2 w-8/12 bg-gradient-to-r from-green to-blue-400 rounded-full my-1.5 py-2 text-xl text-white focus:outline-none"
+        className="mt-2 w-8/12 bg-gradient-to-r from-green to-blue-400 dark:bg-gray-700 rounded-full my-1.5 py-2 text-xl text-white focus:outline-none transform hover:scale-95 duration-500"
         onClick={() => window.open("mailto:jestornogueiro789@gmail.com")}
       >
         Email Me{" "}
       </button>
       <button
-        className=" w-8/12 bg-gradient-to-r from-green to-blue-400 rounded-full my-1.5 py-2 text-xl text-white mb-4 focus:outline-none"
+        className=" w-8/12 bg-gradient-to-r from-green to-blue-400 rounded-full my-1.5 py-2 text-xl text-white mb-4 focus:outline-none transform hover:scale-95 duration-500"
         onClick={changeTheme}
       >
         Toggle Theme{" "}
