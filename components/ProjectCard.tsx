@@ -29,13 +29,18 @@ const ProjectCard: FunctionComponent<{
       />
       <p>{name}</p>
       {showDetail && (
-        <div className="flex absolute top-0 left-0 bg-white dark:bg-darkback h-auto w-full z-10  p-4 shadow-2xl border-2 rounded-xl dark:border-gray-600">
+        <div className="flex md:absolute sticky top-0 left-0 bg-white dark:bg-darkback h-auto w-full z-10  p-4 shadow-2xl border-2 rounded-xl dark:border-gray-600">
           <div className="grid md:grid-cols-2">
             <div>
               <Image src={image_path} alt={name} height={180} width={300} />
               <p className="flex mt-4 gap-3 items-center  ">
-                <FaGithub className="h-8 w-8" />
-                <p> Demo</p>
+                <a href={github_url} target="_blank" rel="noreferrer">
+                  <FaGithub className="h-8 w-8" />
+                </a>
+                <a href={deployed_url} target="_blank" rel="noreferrer">
+                  {" "}
+                  Demo
+                </a>
               </p>
             </div>
             <div>
