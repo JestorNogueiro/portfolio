@@ -13,7 +13,7 @@ function Sidebar() {
     <div className="my-4">
       <Image
         className="rounded-full mx-auto  "
-        src="/jestor.jpg"
+        src="/jestor-2.png"
         alt="jestor nogueiro"
         height="200"
         width="200"
