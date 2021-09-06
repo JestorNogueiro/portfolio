@@ -10,6 +10,7 @@ module.exports = {
         green: "#00f260",
         pink: "#f0e6",
         darkcolor: "#121212",
+        darkback: "#0a0b0e",
       },
     },
   },
