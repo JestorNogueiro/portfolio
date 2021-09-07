@@ -20,6 +20,7 @@ const ProjectCard: FunctionComponent<{
   const [showDetail, setShowDetail] = useState(false);
   return (
     <div className="">
+      {/* project image and name */}
       <Image
         src={image_path}
         alt={name}
@@ -29,9 +30,11 @@ const ProjectCard: FunctionComponent<{
         className="cursor-pointer transform hover:scale-95 duration-500"
       />
       <p>{name}</p>
+      {/* when show detail will true the opacity and background will change  */}
       {showDetail && (
         <div className="absolute inset-0 bg-black opacity-70 h-full w-full z-10" />
       )}
+      {/* when it is true the project details will appear */}
       {showDetail && (
         <div className="flex md:absolute sticky top-0 left-0 bg-white dark:bg-darkback h-auto w-full z-20  p-4 shadow-2xl border-2 rounded-xl dark:border-gray-600">
           <div className="grid md:grid-cols-2">
@@ -73,6 +76,7 @@ const ProjectCard: FunctionComponent<{
                 ))}
               </div>
             </div>
+            {/* button to close the project details */}
             <button onClick={() => setShowDetail(false)}>
               <IoIosClose className="h-8 w-8 absolute top-0 right-0 bg-gray-600 text-white rounded-full dark:bg-gray-700 m-3 transform hover:rotate-90 duration-500 " />
             </button>
