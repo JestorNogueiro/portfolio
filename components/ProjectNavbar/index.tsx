@@ -2,7 +2,7 @@ import ProjectItems from "./ProjectItems";
 
 const ProjectNavbar = () => {
   return (
-    <div className="flex px-3 py-2 space-x-3 ">
+    <div className="flex px-3 py-2 space-x-3 overflow-x-auto ">
       <ProjectItems value="all" />
       <ProjectItems value="react" />
       <ProjectItems value="next" />
