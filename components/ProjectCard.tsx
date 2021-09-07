@@ -62,13 +62,14 @@ const ProjectCard: FunctionComponent<{
                 </a>
               </div>
             </div>
-            <div className=" flex flex-col">
-              <h2>{name}</h2>
-              <p>{description}</p>
-              <div className="space-x-4 ">
+            {/* project details */}
+            <div>
+              <h2 className="mb-3 text-xl font-medium md:text-2xl">{name}</h2>
+              <p className="mb-3 font-medium">{description}</p>
+              <div className=" flex flex-wrap items-center justify-center mt-5 space-x-2 tracking-wider ">
                 {tech.map((item) => (
                   <span
-                    className="bg-gray-200 dark:bg-gray-900 px-3 py-1 gap-3 my-4"
+                    className="bg-gray-200 dark:bg-gray-900 px-3 py-1 my-4"
                     key={item}
                   >
                     {item}
