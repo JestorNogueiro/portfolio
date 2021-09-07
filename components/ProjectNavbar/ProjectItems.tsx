@@ -1,7 +1,10 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
+import { Category } from "../../type";
 
-const ProjectItems = () => {
-  return <div>items</div>;
+const ProjectItems: FunctionComponent<{ value: Category | "all" }> = ({
+  value,
+}) => {
+  return <div>{value}</div>;
 };
 
 export default ProjectItems;
