@@ -3,6 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { Project } from "../type";
 import Image from "next/image";
 import { IoIosClose } from "react-icons/io";
+import { AiFillProject } from "react-icons/ai";
 const ProjectCard: FunctionComponent<{
   projectData: Project;
 }> = ({
@@ -31,17 +32,29 @@ const ProjectCard: FunctionComponent<{
       {showDetail && (
         <div className="flex md:absolute sticky top-0 left-0 bg-white dark:bg-darkback h-auto w-full z-10  p-4 shadow-2xl border-2 rounded-xl dark:border-gray-600">
           <div className="grid md:grid-cols-2">
-            <div>
+            <div className="flex flex-col items-center justify-center py-3">
               <Image src={image_path} alt={name} height={180} width={300} />
-              <p className="flex mt-4 gap-3 items-center  ">
-                <a href={github_url} target="_blank" rel="noreferrer">
-                  <FaGithub className="h-8 w-8" />
+              <div className="flex mt-4 gap-3 justify-center ">
+                <a
+                  href={github_url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="bg-gray-200 h-8
+                  min-w-max flex items-center py-2 px-3 "
+                >
+                  <FaGithub className="h-7 w-7 text-center" />
                 </a>
-                <a href={deployed_url} target="_blank" rel="noreferrer">
-                  {" "}
-                  Demo
+                <a
+                  href={deployed_url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="bg-gray-200    h-8
+                  min-w-max flex items-center py-2 px-3"
+                >
+                  <AiFillProject />
+                  <span>Demo</span>
                 </a>
-              </p>
+              </div>
             </div>
             <div>
               <h2>{name}</h2>
