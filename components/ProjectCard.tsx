@@ -30,7 +30,10 @@ const ProjectCard: FunctionComponent<{
       />
       <p>{name}</p>
       {showDetail && (
-        <div className="flex md:absolute sticky top-0 left-0 bg-white dark:bg-darkback h-auto w-full z-10  p-4 shadow-2xl border-2 rounded-xl dark:border-gray-600">
+        <div className="absolute inset-0 bg-black opacity-70 h-full w-full z-10" />
+      )}
+      {showDetail && (
+        <div className="flex md:absolute sticky top-0 left-0 bg-white dark:bg-darkback h-auto w-full z-20  p-4 shadow-2xl border-2 rounded-xl dark:border-gray-600">
           <div className="grid md:grid-cols-2">
             <div className="flex flex-col items-center justify-center py-3">
               <Image src={image_path} alt={name} height={180} width={300} />
@@ -39,16 +42,16 @@ const ProjectCard: FunctionComponent<{
                   href={github_url}
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-gray-200 h-8
+                  className="bg-gray-200 dark:bg-gray-900  h-8
                   min-w-max flex items-center py-2 px-3 "
                 >
-                  <FaGithub className="h-7 w-7 text-center" />
+                  <FaGithub className="h-6 w-6 text-center" />
                 </a>
                 <a
                   href={deployed_url}
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-gray-200    h-8
+                  className="bg-gray-200 dark:bg-gray-900 mr-2   h-8
                   min-w-max flex items-center py-2 px-3"
                 >
                   <AiFillProject />
@@ -56,17 +59,22 @@ const ProjectCard: FunctionComponent<{
                 </a>
               </div>
             </div>
-            <div>
+            <div className=" flex flex-col">
               <h2>{name}</h2>
               <p>{description}</p>
-              <p className="space-x-4">
+              <div className="space-x-4 ">
                 {tech.map((item) => (
-                  <span key={item}>{item}</span>
+                  <span
+                    className="bg-gray-200 dark:bg-gray-900 px-3 py-1 gap-3 my-4"
+                    key={item}
+                  >
+                    {item}
+                  </span>
                 ))}
-              </p>
+              </div>
             </div>
             <button onClick={() => setShowDetail(false)}>
-              <IoIosClose className="h-8 w-8 absolute top-0 right-0 bg-gray-600 text-white rounded-full dark:bg-gray-400m m-3 transform hover:rotate-90 duration-500 " />
+              <IoIosClose className="h-8 w-8 absolute top-0 right-0 bg-gray-600 text-white rounded-full dark:bg-gray-700 m-3 transform hover:rotate-90 duration-500 " />
             </button>
           </div>
         </div>
