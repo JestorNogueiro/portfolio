@@ -22,7 +22,7 @@ const NavItems: FunctionComponent<{
   ) : null;
 };
 
-function Navbar() {
+const Navbar = () => {
   const [activeItem, setActiveItem] = useState<string>("");
   const { pathname } = useRouter();
 
@@ -59,6 +59,6 @@ function Navbar() {
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;
