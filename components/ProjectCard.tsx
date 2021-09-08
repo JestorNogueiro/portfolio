@@ -19,7 +19,7 @@ const ProjectCard: FunctionComponent<{
 }) => {
   const [showDetail, setShowDetail] = useState(false);
   return (
-    <div className="">
+    <div>
       {/* project image and name */}
       <Image
         src={image_path}
@@ -30,9 +30,7 @@ const ProjectCard: FunctionComponent<{
         onClick={() => setShowDetail(true)}
         className="cursor-pointer transform hover:scale-95 duration-500 "
       />
-      <p className="text-center mt-3 text-xl tracking-wider font-semibold">
-        {name}
-      </p>
+      <p className="text-center mt-3 text-lg tracking-wider ">{name}</p>
       {/* when show detail will true the opacity and background will change  */}
       {showDetail && (
         <div className="absolute inset-0 bg-black opacity-70 h-full w-full z-10" />
