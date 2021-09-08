@@ -25,11 +25,14 @@ const ProjectCard: FunctionComponent<{
         src={image_path}
         alt={name}
         height={180}
-        width={250}
+        width={300}
+        layout="responsive"
         onClick={() => setShowDetail(true)}
-        className="cursor-pointer transform hover:scale-95 duration-500"
+        className="cursor-pointer transform hover:scale-95 duration-500 "
       />
-      <p>{name}</p>
+      <p className="text-center mt-3 text-xl tracking-wider font-semibold">
+        {name}
+      </p>
       {/* when show detail will true the opacity and background will change  */}
       {showDetail && (
         <div className="absolute inset-0 bg-black opacity-70 h-full w-full z-10" />
@@ -37,9 +40,15 @@ const ProjectCard: FunctionComponent<{
       {/* when it is true the project details will appear */}
       {showDetail && (
         <div className="flex md:absolute sticky top-0 left-0 bg-white dark:bg-darkback h-auto w-full z-20  p-4 shadow-2xl border-2 rounded-xl dark:border-gray-600">
-          <div className="grid md:grid-cols-2">
+          <div className="grid md:grid-cols-2 grid-cols-1 ">
             <div className="flex flex-col items-center justify-center py-3">
-              <Image src={image_path} alt={name} height={180} width={300} />
+              <Image
+                src={image_path}
+                alt={name}
+                height={180}
+                width={300}
+                // layout="responsive"
+              />
               <div className="flex mt-4 gap-3 justify-center ">
                 <a
                   href={github_url}
@@ -63,7 +72,7 @@ const ProjectCard: FunctionComponent<{
               </div>
             </div>
             {/* project details */}
-            <div>
+            <div className="ml-4 ">
               <h2 className="mb-3 text-xl font-medium md:text-2xl">{name}</h2>
               <p className="mb-3 font-medium">{description}</p>
               <div className=" flex flex-wrap items-center justify-center mt-5 space-x-2 tracking-wider ">
