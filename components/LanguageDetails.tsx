@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { fadeInUp, stagger } from "../animation";
+import { fadeInUp } from "../animation";
 function LanguageDetails({ title, Icon }) {
   return (
     <motion.div
