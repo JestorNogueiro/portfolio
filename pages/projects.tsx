@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
+import { fadeInUp, stagger } from "../animation";
 import ProjectCard from "../components/ProjectCard";
 import ProjectNavbar from "../components/ProjectNavbar";
 import { project } from "../data";
@@ -30,16 +32,22 @@ const Projects = () => {
       {/* project filter */}
       <ProjectNavbar filterData={handleFilter} />
 
-      <div className="relative grid grid-cols-12 gap-4 my-3 ">
+      <motion.div
+        variants={stagger}
+        initial="initial"
+        animate="animate"
+        className="relative grid grid-cols-12 gap-4 my-3 "
+      >
         {project.map((pro) => (
-          <div
+          <motion.div
+            variants={fadeInUp}
             key={pro.name}
             className=" col-span-12  sm:col-span-6 lg:col-span-4  dark:bg-gray-900 bg-gray-100 justify-center p-4"
           >
             <ProjectCard projectData={pro} />
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
