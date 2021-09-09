@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { servicesProvided } from "../data";
 import ServiceCard from "../components/ServiceCard";
+import { motion } from "framer-motion";
+import { fadeInUp, stagger } from "../animation";
 export default function Home() {
   return (
     <div className="">
@@ -27,11 +29,18 @@ export default function Home() {
           <h1 className="font-bold text-2xl my-8 text-left border-b-2 tracking-wide">
             I Love Doing...
           </h1>
-          <div className="grid md:grid-cols-2 grid-cols-1 2xl:grid-cols-3 gap-2 ">
+          <motion.div
+            className="grid md:grid-cols-2 grid-cols-1 2xl:grid-cols-3 gap-2 "
+            variants={stagger}
+            initial="initial"
+            animate="animate"
+          >
             {servicesProvided.map((serv) => (
-              <ServiceCard service={serv} key={serv.title} />
+              <motion.div variants={fadeInUp} key={serv.title}>
+                <ServiceCard service={serv} />
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
