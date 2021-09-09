@@ -28,7 +28,7 @@ function resume() {
             </h2>
             <p className="font-medium">Year 2018-20</p>
             <p>
-              Did MCA in Jain college of engineering, Balagavi Karnataka India
+              Did MCA in Jain college of engineering, Belagavi Karnataka India
             </p>
           </div>
         </motion.div>
