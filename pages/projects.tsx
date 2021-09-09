@@ -31,7 +31,7 @@ const Projects = () => {
       animate="animate"
       exit="exit"
       className="my-2 py-2 px-5 overflow-y-scroll"
-      style={{ height: "80vh" }}
+      style={{ height: "85vh" }}
     >
       {/* project filter */}
       <ProjectNavbar filterData={handleFilter} />
