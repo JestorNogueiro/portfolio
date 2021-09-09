@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { fadeInUp, stagger } from "../animation";
+import { fadeInUp, routeAnimate, stagger } from "../animation";
 import ProjectCard from "../components/ProjectCard";
 import ProjectNavbar from "../components/ProjectNavbar";
 import { project } from "../data";
@@ -25,9 +25,13 @@ const Projects = () => {
     }
   };
   return (
-    <div
+    <motion.div
+      variants={routeAnimate}
+      initial="initial"
+      animate="animate"
+      exit="exit"
       className="my-2 py-2 px-5 overflow-y-scroll"
-      style={{ height: "85vh" }}
+      style={{ height: "80vh" }}
     >
       {/* project filter */}
       <ProjectNavbar filterData={handleFilter} />
@@ -48,7 +52,7 @@ const Projects = () => {
           </motion.div>
         ))}
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 

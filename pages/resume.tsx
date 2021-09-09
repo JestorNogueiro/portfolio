@@ -10,10 +10,16 @@ import { DiCss3 } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
 import LanguageDetails from "../components/LanguageDetails";
 import { motion } from "framer-motion";
-import { fadeInUp, stagger } from "../animation";
+import { fadeInUp, routeAnimate, stagger } from "../animation";
 function resume() {
   return (
-    <div className="px-4 py-2">
+    <motion.div
+      variants={routeAnimate}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="px-4 py-2"
+    >
       <div className="grid md:grid-cols-2">
         <motion.div
           variants={fadeInUp}
@@ -113,7 +119,7 @@ function resume() {
           </div>
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
