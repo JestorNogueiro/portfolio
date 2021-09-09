@@ -10,7 +10,7 @@ import { DiCss3 } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
 import LanguageDetails from "../components/LanguageDetails";
 import { motion } from "framer-motion";
-import { fadeInUp } from "../animation";
+import { fadeInUp, stagger } from "../animation";
 function resume() {
   return (
     <div className="px-4 py-2">
@@ -80,7 +80,7 @@ function resume() {
         <div className="border-r mr-4">
           <h1 className="text-2xl font-bold my-3">Languages & Framework</h1>
           <motion.div
-            variants={fadeInUp}
+            variants={stagger}
             initial="initial"
             animate="animate"
             className="flex flex-wrap space-x-3 p-2"
@@ -95,7 +95,9 @@ function resume() {
             <LanguageDetails title="reactNative" Icon={FaReact} />
           </motion.div>
         </div>
-        <motion.div variants={fadeInUp} initial="initial" animate="animate">
+
+        {/* other tools */}
+        <motion.div variants={stagger} initial="initial" animate="animate">
           <h2 className="text-2xl font-bold my-3">Other Tools & Tech</h2>
           <div className=" flex flex-wrap">
             <LanguageDetails title="jquery" Icon={SiJquery} />
