@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps, router }) {
         </div>
         <div className=" lg:col-span-9 grid-cols-9 bg-white rounded-2xl col-span-12 dark:bg-darkcolor">
           <Navbar />
-          <AnimatePresence>
+          <AnimatePresence exitBeforeEnter>
             <Component {...pageProps} key={router.route} />
           </AnimatePresence>
         </div>
