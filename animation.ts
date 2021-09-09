@@ -17,3 +17,15 @@ export const stagger = {
     },
   },
 };
+export const routeAnimate = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      delay: 0.1,
+      duration: 0.1,
+    },
+  },
+};
