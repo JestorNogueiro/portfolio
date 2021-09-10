@@ -100,9 +100,9 @@ export const project: Project[] = [
     name: "Burger website",
     description:
       " It is Responsive website (only Front end included), which works perfectly on Mobile browser",
-    image_path: "",
-    deployed_url: "",
-    github_url: "",
+    image_path: "/project/burger.jpg",
+    deployed_url: "https://jestornogueiro.github.io/responsive_burger_website/",
+    github_url: "https://github.com/JestorNogueiro/responsive_burger_website",
     category: ["react"],
     tech: ["react.js", " Styled component"],
   },
