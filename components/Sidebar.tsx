@@ -10,7 +10,7 @@ function Sidebar() {
     setTheme(theme === "light" ? "dark" : "light");
   };
   return (
-    <div className="my-4">
+    <div className="my-4 mx-auto">
       <Image
         className="rounded-full mx-auto bg-gray-300 dark:bg-gray-800 "
         src="/jestor-2.png"
