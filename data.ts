@@ -5,7 +5,7 @@ export const servicesProvided: IService[] = [
   {
     title: "Front-end Dev",
     about:
-      "I Love to build beautiful web page using <b>HTML</b> , <b>CSS</b>, <b>React.js</b>",
+      "I Love to build beautiful web page using <b>HTML</b> , <b>CSS</b>,<b>JavaScript</b>, <b>React.js</b>, <b>Next.js</b> ",
     Icon: RiComputerLine,
   },
   {
@@ -15,9 +15,15 @@ export const servicesProvided: IService[] = [
     Icon: RiComputerLine,
   },
   {
+    title: "Responsive website ",
+    about:
+      "I can built <b>Responsive</b> website which can work on both <b> Desktop</b> and <b>mobile</b> ",
+    Icon: RiComputerLine,
+  },
+  {
     title: "Quick Learner",
     about:
-      "I am a quick learner, I can learn and adapt new <b> Technology </b>and <b>framework</b> easily ",
+      "I am a quick learner, I can learn and adapt new <b> Technology </b>and <b>Framework</b> easily ",
     Icon: RiComputerLine,
   },
 ];
@@ -89,5 +95,15 @@ export const project: Project[] = [
     github_url: "https://github.com/JestorNogueiro/amazon-clone",
     category: ["react"],
     tech: ["react.js", "contextAPI", "material UI", "firebase"],
+  },
+  {
+    name: "Burger website",
+    description:
+      " It is Responsive website (only Front end included), which works perfectly on Mobile browser",
+    image_path: "",
+    deployed_url: "",
+    github_url: "",
+    category: ["react"],
+    tech: ["react.js", " Styled component"],
   },
 ];
