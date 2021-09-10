@@ -23,14 +23,14 @@ function Sidebar() {
       <h2 className="my-3 text-3xl font-medium tracking-wider font-Lobster">
         Jestor Nogueiro
       </h2>
-      <p className="bg-gray-200 dark:bg-gray-100 dark:text-black font-semibold my-3 px-2 py-1.5 rounded-full w-8/12">
+      <p className="bg-gray-200 dark:bg-gray-100 dark:text-black font-semibold my-3 px-2 py-1.5 rounded-full w-8/12 mx-auto ">
         Front-End Developer
       </p>
 
       <a
         href="/jestor-Resume.pdf"
         download="jestorResume"
-        className="bg-gray-200 dark:bg-gray-100 dark:text-black my-3 px-2  py-1.5 rounded-full flex items-center justify-center w-8/12 "
+        className="bg-gray-200 dark:bg-gray-100 dark:text-black my-3 px-2  py-1.5 rounded-full flex items-center justify-center w-8/12 mx-auto  "
       >
         Download Resume
         <HiDownload className="animate-bounce ml-2 " />
