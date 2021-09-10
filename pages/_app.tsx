@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps, router }) {
         <div className=" lg:col-span-3 bg-white rounded-2xl col-span-12 px-3 text-center md:min-w-min dark:bg-darkcolor">
           <Sidebar />
         </div>
-        <div className=" lg:col-span-9 grid-cols-9 bg-white rounded-2xl col-span-12 dark:bg-darkcolor">
+        <div className=" flex flex-col overflow-hidden lg:col-span-9 grid-cols-9 bg-white rounded-2xl col-span-12 dark:bg-darkcolor shadow-2xl -ml-4">
           <Navbar />
           <AnimatePresence exitBeforeEnter>
             <Component {...pageProps} key={router.route} />

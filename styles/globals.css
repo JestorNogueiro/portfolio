@@ -6,6 +6,7 @@ body {
   background-color: black;
   font-family: sans-serif;
   color: #354358;
+  margin-left: -16px;
   /* background-image: url("/public/scene.jpg");
   background-repeat: no-repeat;
   background-size: cover;
