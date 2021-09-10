@@ -80,13 +80,13 @@ function Sidebar() {
 
       {/* contact */}
       <button
-        className="mt-2 w-8/12 bg-gradient-to-r from-green to-blue-400 dark:bg-gray-700 rounded-full my-1.5 py-2 text-xl text-white focus:outline-none transform hover:scale-95 duration-500"
+        className="mt-2 w-8/12 bg-gradient-to-r from-green to-blue-400 dark:bg-gray-700 rounded-full my-1.5 py-1.5 text-xl text-white focus:outline-none transform hover:scale-95 duration-500"
         onClick={() => window.open("mailto:jestornogueiro789@gmail.com")}
       >
         Email Me{" "}
       </button>
       <button
-        className=" w-8/12 bg-gradient-to-r from-green to-blue-400 rounded-full my-1.5 py-2 text-xl text-white mb-4 focus:outline-none transform hover:scale-95 duration-500"
+        className=" w-8/12 bg-gradient-to-r from-green to-blue-400 rounded-full my-1.5 py-1.5 text-xl text-white mb-4 focus:outline-none transform hover:scale-95 duration-500"
         onClick={changeTheme}
       >
         Toggle Theme{" "}
