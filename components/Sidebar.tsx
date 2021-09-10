@@ -12,7 +12,7 @@ function Sidebar() {
   return (
     <div className="my-4">
       <Image
-        className="rounded-full mx-auto  "
+        className="rounded-full mx-auto bg-gray-300 dark:bg-gray-800 "
         src="/jestor-2.png"
         alt="jestor nogueiro"
         height="200"
@@ -23,14 +23,14 @@ function Sidebar() {
       <h2 className="my-3 text-3xl font-medium tracking-wider font-Lobster">
         Jestor Nogueiro
       </h2>
-      <p className="bg-gray-200 dark:bg-gray-100 dark:text-black font-semibold my-3 px-2 py-1.5 rounded-full">
+      <p className="bg-gray-200 dark:bg-gray-100 dark:text-black font-semibold my-3 px-2 py-1.5 rounded-full w-8/12">
         Front-End Developer
       </p>
 
       <a
-        href="/jestor.jpg"
+        href="/jestor-Resume.pdf"
         download="jestorResume"
-        className="bg-gray-200 dark:bg-gray-100 dark:text-black my-3 px-2  py-1.5 rounded-full flex items-center justify-center  "
+        className="bg-gray-200 dark:bg-gray-100 dark:text-black my-3 px-2  py-1.5 rounded-full flex items-center justify-center w-8/12 "
       >
         Download Resume
         <HiDownload className="animate-bounce ml-2 " />
