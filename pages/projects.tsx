@@ -34,8 +34,8 @@ const Projects = () => {
       style={{ height: "85vh" }}
     >
       {/* project filter */}
-      <ProjectNavbar filterData={handleFilter} />
-
+      {/* <ProjectNavbar filterData={handleFilter} /> */}
+      <h2 className="text-lg ">All projects</h2>
       <motion.div
         variants={stagger}
         initial="initial"

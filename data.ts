@@ -58,7 +58,7 @@ export const project: Project[] = [
     name: "Netflix",
     description:
       "This is netflix like website inspired with its UI ,In this project the movie poster will display with different genre available like Netflix original, Horror, Action, etc. And also view the trailer. (Named as JestFlix)",
-    image_path: "/scene.jpg",
+    image_path: "/project/netflix.jpg",
     deployed_url: "https://netflix-clone-129c2.web.app/",
     github_url: "https://github.com/JestorNogueiro/Netflix-Clone",
     category: ["react"],
