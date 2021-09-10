@@ -30,7 +30,7 @@ function Sidebar() {
       <a
         href="/jestor-Resume.pdf"
         download="jestorResume"
-        className="bg-gray-200 dark:bg-gray-100 dark:text-black my-3 px-8  py-1.5 rounded-full flex items-center justify-center max-w-min mx-auto whitespace-nowrap "
+        className="bg-gray-200 dark:bg-gray-100 dark:text-black my-3 px-8  py-1.5 rounded-full flex items-center justify-center max-w-min mx-auto whitespace-nowrap focus:outline-none"
       >
         Download Resume
         <HiDownload className="animate-bounce ml-2 " />
