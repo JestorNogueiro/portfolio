@@ -106,4 +106,19 @@ export const project: Project[] = [
     category: ["react"],
     tech: ["react.js", " Styled component"],
   },
+  {
+    name: "Portfolio",
+    description: "Its my Portfolio website, check it out 😎 ",
+    image_path: "/project/portfolio.jpg",
+    deployed_url: "https://portfolio-jestornogueiro.vercel.app/",
+    github_url: "https://github.com/JestorNogueiro/portfolio",
+    category: ["next"],
+    tech: [
+      "next.js",
+      "TypeScript",
+      "framer-motion",
+      "next-themes",
+      "Tailwind css",
+    ],
+  },
 ];
