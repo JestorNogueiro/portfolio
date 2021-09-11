@@ -97,9 +97,9 @@ export const project: Project[] = [
     tech: ["react.js", "contextAPI", "material UI", "firebase"],
   },
   {
-    name: "Burger website",
+    name: "Burger website 🍔",
     description:
-      " It is Responsive website (only Front end included), which works perfectly on Mobile browser",
+      " It is Responsive website (only Front end included), which works perfectly on Mobile browser ",
     image_path: "/project/burger.jpg",
     deployed_url: "https://jestornogueiro.github.io/responsive_burger_website/",
     github_url: "https://github.com/JestorNogueiro/responsive_burger_website",
@@ -108,7 +108,8 @@ export const project: Project[] = [
   },
   {
     name: "Portfolio",
-    description: "Its my Portfolio website, check it out 😎 ",
+    description:
+      "It's my Portfolio website, check it out, it has dark mode 😎 ",
     image_path: "/project/portfolio.jpg",
     deployed_url: "https://portfolio-jestornogueiro.vercel.app/",
     github_url: "https://github.com/JestorNogueiro/portfolio",
