@@ -32,7 +32,9 @@ const ProjectCard: FunctionComponent<{
         onClick={() => setShowDetail(true)}
         className="cursor-pointer transform hover:scale-95 duration-500 bg-gray-800"
       />
+
       <p className="text-center mt-3 text-lg tracking-wider ">{name}</p>
+
       {/* when show detail will true the opacity and background will change  */}
       {showDetail && (
         <div className="absolute inset-0 bg-black opacity-70 h-full w-full z-10" />
@@ -55,7 +57,7 @@ const ProjectCard: FunctionComponent<{
                 alt={name}
                 height={180}
                 width={300}
-                className="bg-gray-800"
+                className="bg-gray-800 "
                 // layout="responsive"
               />
               <motion.div
@@ -67,7 +69,7 @@ const ProjectCard: FunctionComponent<{
                   target="_blank"
                   rel="noreferrer"
                   className="bg-gray-200 dark:bg-gray-900  h-8
-                  min-w-max flex items-center py-2 px-3 "
+                  min-w-max flex items-center py-2 px-3 transition transform hover:scale-95 duration-500 "
                 >
                   <FaGithub className="h-6 w-6 text-center" />
                 </a>
@@ -76,9 +78,8 @@ const ProjectCard: FunctionComponent<{
                   target="_blank"
                   rel="noreferrer"
                   className="bg-gray-200 dark:bg-gray-900 ml-2   h-8
-                  min-w-max flex items-center py-2 px-3"
+                  min-w-max flex items-center py-2 px-3 transition transform hover:scale-95 duration-500"
                 >
-                  <AiFillProject />
                   <span>Demo</span>
                 </a>
               </motion.div>
