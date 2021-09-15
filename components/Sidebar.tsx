@@ -3,9 +3,11 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import Image from "next/image";
 import { useTheme } from "next-themes";
+
 function Sidebar() {
   const { theme, setTheme } = useTheme();
 
+  // function for changing the theme
   const changeTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
@@ -81,16 +83,16 @@ function Sidebar() {
 
       {/* contact */}
       <button
-        className="mt-2 w-8/12 bg-gradient-to-r from-green to-blue-400 dark:bg-gray-700 rounded-full my-1.5 py-1.5 text-xl text-white focus:outline-none transform hover:scale-95 duration-500"
+        className="mt-2 w-8/12 bg-gradient-to-r from-green to-blue-400 dark:from-gray-600 dark:to-gray-900  rounded-full my-1.5 py-1.5 text-xl text-white focus:outline-none transform hover:scale-95 duration-500"
         onClick={() => window.open("mailto:jestornogueiro789@gmail.com")}
       >
         Email Me{" "}
       </button>
       <button
-        className=" w-8/12 bg-gradient-to-r from-green to-blue-400 rounded-full my-1.5 py-1.5 text-xl text-white mb-4 focus:outline-none transform hover:scale-95 duration-500"
+        className=" w-8/12 bg-gradient-to-r from-green to-blue-400 dark:from-gray-600 dark:to-gray-900 rounded-full my-1.5 py-1.5 text-xl text-white mb-4 focus:outline-none transform hover:scale-95 duration-500"
         onClick={changeTheme}
       >
-        Toggle Theme{" "}
+        {theme === "dark" ? "🌞 Theme" : "🌚 Theme"}
       </button>
     </div>
   );
